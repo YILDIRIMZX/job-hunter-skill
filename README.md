@@ -73,6 +73,23 @@ CV + what you want
 | Rejected: closed | 1 | the best-fitting job (fit 92) had already been filled; caught and moved out of the list |
 | Fake | 0 | none found in these runs |
 
+**Test 3: focused search, same fictional profile: English-workable entry-level roles in Germany.** One search agent, then investigators on the strongest leads.
+
+- No English-language graduate or trainee program for logistics/supply chain was open. Most entry-level forwarding and operations roles required business-fluent German (C1), so they were excluded with the reason recorded.
+- 8 English-workable roles were found, all confirmed on the employers' own ATS boards (Ashby, Greenhouse), none with red flags. Most asked for 1–4 years of experience; the most realistic was a junior-leaning purchasing role at a Munich startup.
+- Visa: per the Berlin immigration office's official page at test time, the 2026 EU Blue Card has a reduced salary threshold for career starters with a degree from the last 3 years, lower than the Dutch highly-skilled-migrant threshold seen in Test 2; a skilled-worker route without a fixed salary threshold (under 45) also exists if the degree is recognised. No posting stated a salary, so the threshold has to be asked about.
+- A site protected by a bot check was **not** bypassed; the agent used an official page instead (the rule added after Test 2 worked).
+
+Investigators on the 3 strongest leads:
+
+| Job | Result | Why |
+|---|---|---|
+| Purchasing role, Munich deep-tech startup | ✅ Verified, reachable (score 67) | official ATS, well-funded company, English is enough; likely salary above the reduced Blue Card threshold, but a low junior offer could fall below it, so confirm at offer stage |
+| Planning manager, food production site | ✅ Verified, **blocked** (42) | 2–4 years at manager level; site language likely German |
+| Demand planner, Berlin consumer brand | ✅ Verified, **blocked** (42) | 2+ years explicitly mandatory; medium ghost risk (open 89 days, reposted) |
+
+Result: in Germany the visa was not the blocker for these roles; experience and German were.
+
 Bugs these tests found and fixed: a guessed ATS board belonging to a **different company with a similar name** could have "verified" a wrong posting (now ownership is checked); Workday support was missing; verified-but-unreachable jobs ranked above realistic ones (blocker group added); blocker caps were applied inconsistently; an agent got around a site's bot block by faking a browser identity (now explicitly forbidden).
 
 ### What it can do
@@ -178,6 +195,19 @@ Yapay zekâ kodlama ajanları için çok ajanlı bir iş arama skill'i. **Sahte 
 - 3 gerçek ama engelli ilan: Hollanda'da tanınmış sponsor şirketler, ama giriş seviyesi maaş vize eşiğinin altında
 - 1 kapanmış ilan: en uygun ilan (uyum 92) çoktan doldurulmuştu; yakalandı ve listeden çıkarıldı
 - 0 sahte ilan
+
+**Test 3: odaklı arama, aynı kurgusal profil.** Almanya'da İngilizce yapılabilen giriş seviyesi işler. Önce bir arama ajanı çalıştı, sonra en güçlü adaylar araştırmacılara verildi.
+- Lojistik ve tedarik zinciri alanında İngilizce yürütülen açık bir mezun ya da trainee programı yoktu. Giriş seviyesi lojistik ve operasyon işlerinin çoğu akıcı Almanca (C1) istedi; bunlar nedeni kaydedilerek elendi.
+- İngilizce yapılabilen 8 ilan bulundu. Hepsi işverenlerin kendi panolarında doğrulandı ve hiçbirinde kırmızı bayrak yoktu. Çoğu 1–4 yıl deneyim istiyordu; en gerçekçisi Münih'teki bir girişimde satın alma rolüydü.
+- **Vize:** Test sırasında Berlin göç dairesinin resmî sayfasında okunan bilgiye göre 2026 AB Mavi Kart'ında, son 3 yılda mezun olanlar için indirimli bir maaş eşiği var. Bu eşik Test 2'deki Hollanda eşiğinden düşük. Diploma denk sayılırsa, 45 yaş altı için sabit maaş eşiği olmayan nitelikli işçi vizesi de bir seçenek. Hiçbir ilanda maaş yazmadığı için eşik mülakatta sorulmalı.
+- Bot kontrolüyle korunan bir site **aşılmaya çalışılmadı**; ajan bunun yerine resmî bir sayfa kullandı. Test 2'den sonra eklenen kural çalıştı.
+
+En güçlü 3 ilan araştırmacılara verildi:
+- **Satın alma rolü, Münih'te bir derin teknoloji girişimi:** ✅ Doğrulandı, ulaşılabilir (puan 67). İlan resmî ATS'de, şirketin fonu güçlü ve İngilizce yeterli. Maaş muhtemelen indirimli Mavi Kart eşiğinin üstünde, ama deneyim az olduğu için teklif bu eşiğin altında kalabilir; teklif aşamasında teyit edilmeli.
+- **Planlama yöneticisi, gıda üretim tesisi:** ✅ Doğrulandı ama **engelli** (42). 2–4 yıl deneyim ve yönetici seviyesi isteniyor; sahada konuşulan dil büyük ihtimalle Almanca.
+- **Talep planlama uzmanı, Berlin'de bir tüketici markası:** ✅ Doğrulandı ama **engelli** (42). 2+ yıl deneyim açıkça zorunlu. İlan 89 gündür açık ve daha önce de yayınlanmış, bu yüzden hayalet ilan riski orta.
+
+Sonuç: Almanya'da bu roller için engel vize değil, deneyim ve Almanca oldu.
 
 **Testlerde bulunup düzeltilen hatalar:**
 - Tahminle bulunan bir ATS panosu **benzer isimli başka bir şirkete** ait olabiliyordu ve yanlış bir ilanı "doğrulayabilirdi"; artık panonun sahipliği kontrol ediliyor.

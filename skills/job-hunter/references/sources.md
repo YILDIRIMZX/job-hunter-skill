@@ -69,4 +69,10 @@ under age 30; the reduced graduate threshold only applies to graduates of Dutch 
 Entry-level operations and admin roles usually pay below that, which makes the permit a hard blocker even
 when the employer is a sponsor. Also check WHICH legal entity employs the role: group companies on the
 register may not be the one hiring.
+Germany (from testing, 2026): the EU Blue Card has a standard threshold and a lower one for shortage
+occupations and for career starters whose degree is at most 3 years old; the skilled-worker route (§18b)
+has no fixed salary threshold under age 45 but needs a recognised/comparable degree (anabin/ZAB) and usually
+Federal Employment Agency approval. Read the current figures on an official page (e.g. service.berlin.de,
+make-it-in-germany.com) at run time. In practice the bigger barrier for entry-level logistics roles in
+Germany was mandatory German, not the visa.
 | Company health | layoff and funding news, hiring freezes, recent reviews | layoffs trackers, funding news |
